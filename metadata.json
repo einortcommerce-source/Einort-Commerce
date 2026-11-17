@@ -1,0 +1,8 @@
+{
+  "name": "EINORT Commerce Marketplace",
+  "description": "Discover unique products from independent EINORT stores across Cameroon and shop directly on each merchant's storefront.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

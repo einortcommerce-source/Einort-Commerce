@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@theme {
+  --font-heading: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
+
+  --color-einort-navy: #050D24;
+  --color-einort-midnight: #0A1740;
+  --color-einort-royal: #1749C8;
+  --color-einort-electric: #1677F8;
+  --color-einort-cobalt: #2445B8;
+  --color-einort-violet: #6439D6;
+  --color-einort-purple: #8655F0;
+  --color-einort-canvas: #F6F8FC;
+  --color-einort-tint: #E9EEF8;
+  --color-einort-ink: #111827;
+  --color-einort-muted: #64748B;
+  --color-einort-border: #E3E9F4;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    scroll-behavior: smooth;
+    color: #111827;
+    background-color: #FFFFFF;
+    overflow-x: clip;
+  }
+
+  body {
+    overflow-x: clip;
+  }
+
+  h1, h2, h3, h4, .font-heading {
+    font-family: var(--font-heading);
+  }
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
